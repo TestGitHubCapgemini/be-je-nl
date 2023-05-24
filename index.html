@@ -137,16 +137,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://psa-customerfirst--marketingb.sandbox.my.salesforce.com',
-			'https://psa-customerfirst--marketingb.sandbox.my.site.com/PSADealer',
+			'https://psa-customerfirst--hotfix1.sandbox.my.salesforce.com',
+			'https://psa-customerfirst--hotfix1.sandbox.my.site.com/PSADealer',
 			gslbBaseURL,
-			'00D0C0000002E7W',
+			'00D9E000000A6K7',
 			'Chat_Store_at',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-lo2.salesforceliveagent.com/content',
-				deploymentId: '5720C000000CaZf',
-				buttonId: '5730C000000CacN',
-				baseLiveAgentURL: 'https://d.la1-c1cs-lo2.salesforceliveagent.com/chat',
+				baseLiveAgentContentURL: 'https://c.la2-c1cs-fra.salesforceliveagent.com/content',
+				deploymentId: '5729E0000004DHD',
+				buttonId: '5739E0000004I0n',
+				baseLiveAgentURL: 'https://d.la2-c1cs-fra.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0C000000CacqUAC_1884485d4dd',
 				isOfflineSupportEnabled: false
 			}
@@ -155,7 +155,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst--marketingb.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--hotfix1.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
